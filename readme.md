@@ -6,7 +6,7 @@
 > Get iOS icon file names and dimensions (width)
 
 The default icon file names and required sizes for iOS are listed in a [JSON file](icons.json). This information is useful, for example, when you want to generate icons with the required sizes or to create a [`config.xml`](http://docs.phonegap.com/en/3.5.0/config_ref_images.md.html) file for a PhoneGap/Cordova project or if you just need to create the icons for your iOS project from one source icon.
-
+This information also exists for [android icons](https://github.com/excellenteasy/android-icons).
 
 ## Install
 
