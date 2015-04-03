@@ -66,7 +66,7 @@ $ ios-icons --help
 
 Examples:
     $ ios-icons --format json --size 60
-    { name: 'icon-40.png', width: 40 }
+    { name: 'icon-60.png', width: 60 }
 
     $ ios-icons --size 60@3x
     icon-60@3x.png,180
