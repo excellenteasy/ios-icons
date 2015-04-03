@@ -7,6 +7,8 @@ cache:
   - node_modules
 notifications:
   email: false
+  slack:
+    secure: N96GBz21QrC8hC9WssrPi60hSVgiF6GRcRHNQU0I/vqHn1JlrAuqXLmPtJaGJ3WP89vX8MnVyarw/ULnmsefVbzjLcNNxRtrrLpXvDD3MZdtMmCNKLpKlagiGkXyMEFetAzlPfEoHzWQzZVMq0nG3slbsEQeFbIfxvD/yCPvqTQ=
 env: global:GH_TOKEN=c4d321258c51f4efb309a89ac52a05bd49b63a51
 deploy:
   provider: npm
