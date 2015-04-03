@@ -32,6 +32,7 @@
     "phonegap"
   ],
   "dependencies": {
+    "abbrev": "^1.0.5",
     "minimist": "^1.1.0"
   },
   "devDependencies": {

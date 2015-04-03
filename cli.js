@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 'use strict'
-var argv = require('minimist')(process.argv.slice(2))
+var abbrev = require('abbrev')
+var argv = require('minimist')(process.argv.slice(2), abbrev('help', 'version'))
 var pkg = require('./package.json')
 var icons = require('./')
 
@@ -37,22 +38,16 @@ function formatLog (icons, argv) {
 }
 
 function cli () {
-  if (argv.help || argv.h) {
-    return help()
-  }
+  if (argv.help) return help()
 
-  if (argv.version || argv.v) {
-    return console.log(pkg.version)
-  }
+  if (argv.version) return console.log(pkg.version)
 
   var options = {
     size: argv.size || argv.s
   }
 
   var output = icons(options)
-  if (output) {
-    console.log(formatLog(output, argv))
-  }
+  if (output) console.log(formatLog(output, argv))
 }
 
 cli()
