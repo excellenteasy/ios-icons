@@ -4,7 +4,7 @@ var argv = require('minimist')(process.argv.slice(2))
 var pkg = require('./package.json')
 var icons = require('./')
 
-function help() {
+function help () {
   console.log([
     pkg.description,
     '',
@@ -23,17 +23,7 @@ function help() {
   ].join('\n'))
 }
 
-if (argv.help || argv.h) {
-  help()
-  return
-}
-
-if (argv.version || argv.v) {
-  console.log(pkg.version)
-  return
-}
-
-function formatLog(icons, argv) {
+function formatLog (icons, argv) {
   var format = (argv.format || 'csv').toLowerCase()
   if (format === 'json') {
     return JSON.stringify(icons)
@@ -41,16 +31,28 @@ function formatLog(icons, argv) {
   if (!Array.isArray(icons)) {
     icons = [icons]
   }
-  return icons.map(function(icon) {
+  return icons.map(function (icon) {
     return icon.name + ',' + icon.width
   }).join('\n')
 }
 
-var options = {
-  size: argv.size || argv.s
+function cli () {
+  if (argv.help || argv.h) {
+    return help()
+  }
+
+  if (argv.version || argv.v) {
+    return console.log(pkg.version)
+  }
+
+  var options = {
+    size: argv.size || argv.s
+  }
+
+  var output = icons(options)
+  if (output) {
+    console.log(formatLog(output, argv))
+  }
 }
 
-var output = icons(options)
-if (output) {
-  console.log(formatLog(output, argv))
-}
+cli()
