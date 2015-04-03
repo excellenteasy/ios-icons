@@ -1,5 +1,21 @@
 language: node_js
 node_js:
   - '0.10'
+  - 'iojs'
+sudo: false
+cache:
+  directories:
+  - node_modules
 notifications:
   email: false
+env:
+  global:GH_TOKEN=c4d321258c51f4efb309a89ac52a05bd49b63a51
+deploy:
+  provider: npm
+  email: david@excellenteasy.com
+  skip_cleanup: true
+  api_key:
+    secure: P237ya6niwYXlG/Ht1SaFsAmvTQwrCsuhUYyX9BLkV8/8YpUst68kGDEVIz7MIzgQBDs9+xEBsGwPp2uvfynACRLHCClHZGg72ZBeycI7WHKmKLqYLg04ccpgNmnpcPgu7GOdBdFyI+5etL6g1b3GStgwYWXj6hP/S1oFUGlbVs=
+  on:
+    branch: master
+    repo: excellenteasy/ios-icons
