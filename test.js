@@ -12,78 +12,78 @@ test('returns all icons in array', function (t) {
 test('returns icon for size 60 as Number', function (t) {
   t.plan(2)
   var icon = iosIcons({size: 60})
-  t.ok(icon.name === 'icon-60.png')
-  t.ok(icon.width === 60)
+  t.ok(icon.name === 'icon-60.png', 'icon name correct')
+  t.ok(icon.width === 60, 'icon width correct')
 })
 
 test('returns icon for size 60 as String', function (t) {
   t.plan(2)
   var icon = iosIcons({size: '60'})
-  t.ok(icon.name === 'icon-60.png')
-  t.ok(icon.width === 60)
+  t.ok(icon.name === 'icon-60.png', 'icon name correct')
+  t.ok(icon.width === 60, 'icon width correct')
 })
 
 test('returns icon for size 120', function (t) {
   t.plan(2)
   var icon = iosIcons({size: 120})
-  t.ok(icon.name === 'icon-60@2x.png')
-  t.ok(icon.width === 120)
+  t.ok(icon.name === 'icon-60@2x.png', 'icon name correct')
+  t.ok(icon.width === 120, 'icon width correct')
 })
 
 test('returns icon for size 60@2x', function (t) {
   t.plan(2)
   var icon = iosIcons({size: '60@2x'})
-  t.ok(icon.name === 'icon-60@2x.png')
-  t.ok(icon.width === 120)
+  t.ok(icon.name === 'icon-60@2x.png', 'icon name correct')
+  t.ok(icon.width === 120, 'icon width correct')
 })
 
 test('returns icon for size 60@3x', function (t) {
   t.plan(2)
   var icon = iosIcons({size: '60@3x'})
-  t.ok(icon.name === 'icon-60@3x.png')
-  t.ok(icon.width === 180)
+  t.ok(icon.name === 'icon-60@3x.png', 'icon name correct')
+  t.ok(icon.width === 180, 'icon width correct')
 })
 
 test('returns icon for empty string with width 57', function (t) {
   t.plan(2)
   var icon = iosIcons({size: ''})
-  t.ok(icon.name === 'icon.png')
-  t.ok(icon.width === 57)
+  t.ok(icon.name === 'icon.png', 'icon name correct')
+  t.ok(icon.width === 57, 'icon width correct')
 })
 
 test('returns icon for size 57 as Number', function (t) {
   t.plan(2)
   var icon = iosIcons({size: 57})
-  t.ok(icon.name === 'icon.png')
-  t.ok(icon.width === 57)
+  t.ok(icon.name === 'icon.png', 'icon name correct')
+  t.ok(icon.width === 57, 'icon width correct')
 })
 
 test('returns icon for size 57 as String', function (t) {
   t.plan(2)
   var icon = iosIcons({size: '57'})
-  t.ok(icon.name === 'icon.png')
-  t.ok(icon.width === 57)
+  t.ok(icon.name === 'icon.png', 'icon name correct')
+  t.ok(icon.width === 57, 'icon width correct')
 })
 
 test('returns icon for @2x', function (t) {
   t.plan(2)
   var icon = iosIcons({size: '@2x'})
-  t.ok(icon.name === 'icon@2x.png')
-  t.ok(icon.width === 114)
+  t.ok(icon.name === 'icon@2x.png', 'icon name correct')
+  t.ok(icon.width === 114, 'icon width correct')
 })
 
 test('returns icon for size 114 as Number', function (t) {
   t.plan(2)
   var icon = iosIcons({size: 114})
-  t.ok(icon.name === 'icon@2x.png')
-  t.ok(icon.width === 114)
+  t.ok(icon.name === 'icon@2x.png', 'icon name correct')
+  t.ok(icon.width === 114, 'icon width correct')
 })
 
 test('returns icon for size 114 as String', function (t) {
   t.plan(2)
   var icon = iosIcons({size: '114'})
-  t.ok(icon.name === 'icon@2x.png')
-  t.ok(icon.width === 114)
+  t.ok(icon.name === 'icon@2x.png', 'icon name correct')
+  t.ok(icon.width === 114, 'icon width correct')
 })
 
 test('returns null for size 123', function (t) {
@@ -95,27 +95,27 @@ test('returns null for size 123', function (t) {
 test('returns icon for size 29 as small', function (t) {
   t.plan(2)
   var icon = iosIcons({size: 29})
-  t.ok(icon.name === 'icon-small.png')
-  t.ok(icon.width === 29)
+  t.ok(icon.name === 'icon-small.png', 'icon name correct')
+  t.ok(icon.width === 29, 'icon width correct')
 })
 
 test('returns icon for size 58 as small@2x', function (t) {
   t.plan(2)
   var icon = iosIcons({size: 58})
-  t.ok(icon.name === 'icon-small@2x.png')
-  t.ok(icon.width === 58)
+  t.ok(icon.name === 'icon-small@2x.png', 'icon name correct')
+  t.ok(icon.width === 58, 'icon width correct')
 })
 
 test('returns icon for file name icon-small@2x.png', function (t) {
   t.plan(2)
   var icon = iosIcons({size: 'icon-small@2x.png'})
-  t.ok(icon.name === 'icon-small@2x.png')
-  t.ok(icon.width === 58)
+  t.ok(icon.name === 'icon-small@2x.png', 'icon name correct')
+  t.ok(icon.width === 58, 'icon width correct')
 })
 
 test('returns icon for file name icon.png', function (t) {
   t.plan(2)
   var icon = iosIcons({size: 'icon.png'})
-  t.ok(icon.name === 'icon.png')
-  t.ok(icon.width === 57)
+  t.ok(icon.name === 'icon.png', 'icon name correct')
+  t.ok(icon.width === 57, 'icon width correct')
 })
