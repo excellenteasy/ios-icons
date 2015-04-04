@@ -41,7 +41,7 @@
     "minimist": "^1.1.0"
   },
   "devDependencies": {
-    "semantic-release": "^3.0.2",
+    "semantic-release": "^3.0.4",
     "standard": "^3.3.2",
     "tape": "^3.0.3"
   }
