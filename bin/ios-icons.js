@@ -1,9 +1,10 @@
 #!/usr/bin/env node
-'use strict'
 var abbrev = require('abbrev')
-var argv = require('minimist')(process.argv.slice(2), abbrev('help', 'version', 'size', 'format'))
-var pkg = require('./package.json')
-var icons = require('./')
+var minimist = require('minimist')
+
+var argv = minimist(process.argv.slice(2), abbrev('help', 'version', 'size', 'format'))
+var pkg = require('../package.json')
+var icons = require('../')
 
 function help () {
   console.log([
