@@ -9,7 +9,7 @@
   "devDependencies": {
     "semantic-release": "^3.0.4",
     "standard": "^3.3.2",
-    "tape": "^3.0.3"
+    "tape": "^4.0.0"
   },
   "bin": "./bin/ios-icons.js",
   "main": "index.js",
