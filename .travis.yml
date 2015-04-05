@@ -10,7 +10,7 @@ cache:
 notifications:
   email: false
   slack:
-    secure: N96GBz21QrC8hC9WssrPi60hSVgiF6GRcRHNQU0I/vqHn1JlrAuqXLmPtJaGJ3WP89vX8MnVyarw/ULnmsefVbzjLcNNxRtrrLpXvDD3MZdtMmCNKLpKlagiGkXyMEFetAzlPfEoHzWQzZVMq0nG3slbsEQeFbIfxvD/yCPvqTQ=
+    secure: Uws/EVZeJDn9b4Wg427ordgwR93X73gaVQ24XZJvkv3Iis5rCd1kR9amvxm0I/lUx3ypWn6P2tYyRPftm57a4KbQl5NjiM6nKibVuZ9prWd69V9cE4XJ7aYMtBMvYh2GINvWr81mUUe0Qe951j7y27Rsor/kjgxL8lNvUh3/wOM=
 before_install:
 - npm i -g npm@^2.0.0
 - npm prune
