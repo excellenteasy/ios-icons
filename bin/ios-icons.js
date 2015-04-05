@@ -1,29 +1,38 @@
 #!/usr/bin/env node
+'use strict'
 var abbrev = require('abbrev')
-var minimist = require('minimist')
-
-var argv = minimist(process.argv.slice(2), abbrev('help', 'version', 'size', 'format'))
-var pkg = require('../package.json')
+var argv = require('yargs')
 var icons = require('../')
 
-function help () {
-  console.log([
-    pkg.description,
-    '',
-    'Use `--format json` to set output to JSON.',
-    'Get specifc icon by size or name by using `--size`.',
-    '',
-    'Examples:',
-    '  $ ios-icons --size 80',
-    '  icon-40@2x.png,80',
-    '',
-    '  $ ios-icons --size 80 --format json',
-    '  {"name":"icon-40@2x.png","width":80}',
-    '',
-    '  $ ios-icons --size small',
-    '  icon-small.png,29'
-  ].join('\n'))
-}
+// help
+argv.help('help')
+argv.alias('h', 'help')
+
+// register abbreviated aliases
+var abbrevs = abbrev(['size', 'format', 'help'])
+var aliases = Object.keys(abbrevs)
+aliases.forEach(function (alias) {
+  if (alias !== abbrevs[alias]) {
+    argv.alias(alias, abbrevs[alias])
+  }
+})
+
+// document options
+argv.option('size', {
+  description: 'number of pixels (width) or string identifiying the icon image'
+})
+argv.option('format', {
+  description: 'format of the output to stdout (csv or json)'
+})
+
+// will show up in help
+argv.usage('Usage: ios-icons [options]')
+
+argv.example('$ ios-icons --size 180', 'icon-60@3x.png,180')
+argv.example('$ ios-icons --size 180 --format json', '{"name":"icon-60@3x.png","width":180}')
+argv.example('$ ios-icons --size 60@3x', 'icon-60@3x.png,180')
+
+argv = argv.argv
 
 function formatLog (icons, argv) {
   var format = (argv.format || 'csv').toLowerCase()
@@ -39,12 +48,8 @@ function formatLog (icons, argv) {
 }
 
 function cli () {
-  if (argv.help) return help()
-
-  if (argv.version) return console.log(pkg.version)
-
   var options = {
-    size: argv.size || argv.s
+    size: argv.size
   }
 
   var output = icons(options)
