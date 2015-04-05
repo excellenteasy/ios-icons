@@ -163,7 +163,7 @@ test('cli returns image with specified size as csv', function (t) {
 
 test('cli returns image with specified size as csv with abbreviated flags', function (t) {
   t.plan(3)
-  var expected = 'Default~iphone.png,320,480\n'
+  var expected = 'icon-60@3x.png,180\n'
   exec('./bin/ios-icons.js --siz 180', function (error, stdout, stderr) {
     var err = error || stderr
     if (err) {
@@ -200,9 +200,16 @@ test('cli returns correct image for size "60@3x" as json', function (t) {
 })
 
 test('cli returns correct image for size "60@3x" as json w/ abbreviated flags', function (t) {
-  t.plan(1)
+  t.plan(2)
   var expected = '{"name":"icon-60@3x.png","width":180}\n'
-  exec('./bin/ios-icons.js --s 60@3x --for json', function (error, stdout, stderr) {
+  exec('./bin/ios-icons.js --size 60@3x --forma json', function (error, stdout, stderr) {
+    var err = error || stderr
+    if (err) {
+      return t.fail('calling cli produced an error: ' + err)
+    }
+    t.equal(stdout, expected, 'cli returned expected output')
+  })
+  exec('./bin/ios-icons.js --size 60@3x --f json', function (error, stdout, stderr) {
     var err = error || stderr
     if (err) {
       return t.fail('calling cli produced an error: ' + err)
