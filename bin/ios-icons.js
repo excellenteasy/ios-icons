@@ -3,13 +3,14 @@
 var abbrev = require('abbrev')
 var argv = require('yargs')
 var icons = require('../')
+var pkg = require('../package.json')
 
 // help
 argv.help('help')
 argv.alias('h', 'help')
 
 // register abbreviated aliases
-var abbrevs = abbrev(['size', 'format', 'help'])
+var abbrevs = abbrev(['size', 'format', 'help', 'version'])
 var aliases = Object.keys(abbrevs)
 aliases.forEach(function (alias) {
   if (alias !== abbrevs[alias]) {
@@ -48,6 +49,10 @@ function formatLog (icons, argv) {
 }
 
 function cli () {
+  if (argv.version) {
+    return console.log(pkg.version)
+  }
+
   var options = {
     size: argv.size
   }
