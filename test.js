@@ -217,3 +217,29 @@ test('cli returns correct image for size "60@3x" as json w/ abbreviated flags', 
     t.equal(stdout, expected, 'cli returned expected output')
   })
 })
+
+test('cli return local package.json version number', function (t) {
+  t.plan(3)
+  var expected = '0.0.0-semantically-released\n'
+  exec('./bin/ios-icons.js --version', function (error, stdout, stderr) {
+    var err = error || stderr
+    if (err) {
+      return t.fail('calling cli produced an error: ' + err)
+    }
+    t.equal(stdout, expected, 'cli returned expected output')
+  })
+  exec('./bin/ios-icons.js --ver', function (error, stdout, stderr) {
+    var err = error || stderr
+    if (err) {
+      return t.fail('calling cli produced an error: ' + err)
+    }
+    t.equal(stdout, expected, 'cli returned expected output')
+  })
+  exec('./bin/ios-icons.js -v', function (error, stdout, stderr) {
+    var err = error || stderr
+    if (err) {
+      return t.fail('calling cli produced an error: ' + err)
+    }
+    t.equal(stdout, expected, 'cli returned expected output')
+  })
+})
