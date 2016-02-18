@@ -1,13 +1,12 @@
 {
   "name": "ios-icons",
-  "version": "0.0.0-semantically-released",
   "description": "Get iOS icon file names and dimensions (width)",
   "dependencies": {
     "abbrev": "^1.0.5",
     "yargs": "^3.7.0"
   },
   "devDependencies": {
-    "semantic-release": "^3.0.4",
+    "semantic-release": "^4.3.5",
     "standard": "^3.3.2",
     "tape": "^4.0.0"
   },
@@ -22,7 +21,8 @@
   "scripts": {
     "test": "standard && node test.js",
     "prepublish": "semantic-release pre",
-    "postpublish": "semantic-release post"
+    "postpublish": "semantic-release post",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "files": [
     "index.js",
