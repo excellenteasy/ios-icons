@@ -7,7 +7,7 @@ test('returns all icons in array', function (t) {
   t.plan(2)
   var icons = iosIcons()
   t.ok(Array.isArray(icons), 'returned an array')
-  t.equal(icons.length, 16, '16 icons returned')
+  t.equal(icons.length, 17, '17 icons returned')
 })
 
 test('returns icon for size 60 as Number', function (t) {
@@ -29,6 +29,13 @@ test('returns icon for size 120', function (t) {
   var icon = iosIcons({size: 120})
   t.ok(icon.name === 'icon-60@2x.png', 'icon name correct')
   t.ok(icon.width === 120, 'icon width correct')
+})
+
+test('returns icon for size 83.5', function (t) {
+  t.plan(2)
+  var icon = iosIcons({size: 167})
+  t.ok(icon.name === 'icon-83.5@2x.png', 'icon name correct')
+  t.ok(icon.width === 167, 'icon width correct')
 })
 
 test('returns icon for size 60@2x', function (t) {
@@ -136,6 +143,7 @@ test('cli returns all images as csv', function (t) {
     'icon-60@2x.png,120',
     'icon-76.png,76',
     'icon-76@2x.png,152',
+    'icon-83.5@2x.png,167',
     'icon-40.png,40',
     'icon-40@2x.png,80',
     'icon.png,57',
