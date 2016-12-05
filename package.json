@@ -3,11 +3,11 @@
   "description": "Get iOS icon file names and dimensions (width)",
   "dependencies": {
     "abbrev": "^1.0.7",
-    "yargs": "^4.1.0"
+    "yargs": "^6.5.0"
   },
   "devDependencies": {
-    "semantic-release": "^4.3.5",
-    "standard": "^6.0.7",
+    "semantic-release": "^6.3.2",
+    "standard": "^8.6.0",
     "tape": "^4.0.0"
   },
   "bin": "./bin/ios-icons.js",
