@@ -14,8 +14,7 @@
   "main": "index.js",
   "author": "David Pfahler <david@excellenteasy.com>",
   "engines": {
-    "iojs": "^1",
-    "node": "^0.10",
+    "node": "^4",
     "npm": "^2"
   },
   "scripts": {
