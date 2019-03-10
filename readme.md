@@ -12,14 +12,14 @@ This information also exists for [android icons](https://github.com/excellenteas
 ## Install
 
 ```sh
-$ npm install --save ios-icons
+$ npm install --save @randy.tarampi/ios-icons
 ```
 
 
 ## Usage
 
 ```js
-var icons = require('ios-icons');
+var icons = require('@randy.tarampi/ios-icons');
 
 icons();
 //=> [{name: 'icon-60@3x.png', width: 180}, {name: 'icon-60.png', width: 60, ...}]
@@ -59,7 +59,7 @@ icons({size: "60@3x"});
 > ios-icons logs to stdout in comma-separated values format (csv) by default so you can easy pipe to other commands in UNIX systems.
 
 ```sh
-$ npm install --global ios-icons
+$ npm install --global @randy.tarampi/ios-icons
 ```
 
 ```sh

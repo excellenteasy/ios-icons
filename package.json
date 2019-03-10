@@ -1,25 +1,26 @@
 {
-  "name": "ios-icons",
+  "name": "@randy.tarampi/ios-icons",
   "description": "Get iOS icon file names and dimensions (width)",
   "dependencies": {
     "abbrev": "^1.0.7",
     "yargs": "^8.0.1"
   },
   "devDependencies": {
-    "semantic-release": "^7.0.2",
+    "@semantic-release/changelog": "^3.0.2",
+    "@semantic-release/git": "^7.0.8",
+    "semantic-release": "^15.13.3",
     "standard": "^10.0.0",
     "tape": "^4.0.0"
   },
   "bin": "./bin/ios-icons.js",
   "main": "index.js",
-  "author": "David Pfahler <david@excellenteasy.com>",
+  "author": "Randy Tarampi <randy.tarampi@gmail.com>",
   "engines": {
     "node": "^4",
     "npm": "^2"
   },
   "scripts": {
-    "test": "standard && node test.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "test": "standard && node test.js"
   },
   "files": [
     "index.js",
@@ -35,9 +36,12 @@
     "phonegap"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/excellenteasy/ios-icons.git"
+    "url": "https://github.com/randytarampi/ios-icons.git"
   },
   "version": "0.0.0-development"
 }
