@@ -16,8 +16,8 @@
     "tape": "^4.10.1"
   },
   "engines": {
-    "node": "^4",
-    "npm": "^2"
+    "node": "^6",
+    "npm": "^3"
   },
   "files": [
     "bin/ios-icons.js",
