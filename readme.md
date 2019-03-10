@@ -2,7 +2,7 @@
 [![Build Status](https://travis-ci.org/excellenteasy/ios-icons.svg?branch=master)](https://travis-ci.org/excellenteasy/ios-icons)
 [![Dependency Status](https://david-dm.org/excellenteasy/ios-icons.svg)](https://david-dm.org/excellenteasy/ios-icons)
 [![devDependency Status](https://david-dm.org/excellenteasy/ios-icons/dev-status.svg)](https://david-dm.org/excellenteasy/ios-icons#info=devDependencies)
-[![Semantically Released](https://img.shields.io/badge/versioning-semantically%20released-brightgreen.svg)](https://github.com/boennemann/semantic-release)
+[![Semantically Released](https://img.shields.io/badge/versioning-semantically%20released-brightgreen.svg)](https://github.com/boennemann/semantic-release) [![Greenkeeper badge](https://badges.greenkeeper.io/randytarampi/ios-icons.svg)](https://greenkeeper.io/)
 
 > Get iOS icon file names and dimensions (width)
 
