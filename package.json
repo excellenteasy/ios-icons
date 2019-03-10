@@ -2,6 +2,8 @@
   "name": "@randy.tarampi/ios-icons",
   "description": "Get iOS icon file names and dimensions (width)",
   "version": "3.4.0",
+  "author": "Randy Tarampi <randy.tarampi@gmail.com>",
+  "bin": "./bin/ios-icons.js",
   "dependencies": {
     "abbrev": "^1.1.1",
     "yargs": "^13.2.2"
@@ -13,37 +15,15 @@
     "standard": "^12.0.1",
     "tape": "^4.10.1"
   },
-  "bin": "./bin/ios-icons.js",
-  "main": "index.js",
-  "author": "Randy Tarampi <randy.tarampi@gmail.com>",
   "engines": {
     "node": "^4",
     "npm": "^2"
   },
-  "scripts": {
-    "test": "standard && node test.js"
-  },
   "files": [
-    "index.js",
     "bin/ios-icons.js",
-    "icons.json"
+    "icons.json",
+    "index.js"
   ],
-  "keywords": [
-    "cli",
-    "bin",
-    "icon",
-    "ios",
-    "cordova",
-    "phonegap"
-  ],
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/randytarampi/ios-icons.git"
-  },
   "greenkeeper": {
     "commitMessages": {
       "initialBadge": "docs(greenkeeper): Add Greenkeeper badge.",
@@ -62,5 +42,22 @@
       "basicPR": "chore(greenkeeper): Update ${dependency}",
       "groupPR": "chore(greenkeeper): Update ${dependency} for ${group}"
     }
+  },
+  "keywords": [
+    "bin",
+    "cli",
+    "cordova",
+    "icon",
+    "ios",
+    "phonegap"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "randytarampi/ios-icons.git",
+  "scripts": {
+    "test": "standard && node test.js"
   }
 }
