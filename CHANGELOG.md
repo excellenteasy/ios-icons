@@ -1,3 +1,16 @@
+# [4.0.0](https://github.com/randytarampi/ios-icons/compare/v3.4.0...v4.0.0) (2019-03-10)
+
+
+### Bug Fixes
+
+* **package:** Since the package updates we no longer support node@4. ([f2227bc](https://github.com/randytarampi/ios-icons/commit/f2227bc))
+* **travis:** Don't bother caching dependencies. ([f77b9e3](https://github.com/randytarampi/ios-icons/commit/f77b9e3))
+
+
+### BREAKING CHANGES
+
+* **package:** Drop support for node 4 and earlier, since `yargs^13.2.2` requires ES6 support.
+
 # [3.4.0](https://github.com/randytarampi/ios-icons/compare/v3.3.3...v3.4.0) (2019-03-10)
 
 
