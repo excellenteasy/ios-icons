@@ -7,7 +7,7 @@ test('returns all icons in array', function (t) {
   t.plan(2)
   var icons = iosIcons()
   t.ok(Array.isArray(icons), 'returned an array')
-  t.equal(icons.length, 17, '17 icons returned')
+  t.equal(icons.length, 18, '18 icons returned')
 })
 
 test('returns icon for size 60 as Number', function (t) {
@@ -154,7 +154,8 @@ test('cli returns all images as csv', function (t) {
     'icon-small@2x.png,58',
     'icon-small@3x.png,87',
     'icon-50.png,50',
-    'icon-50@2x.png,100\n'
+    'icon-50@2x.png,100',
+    'icon-1024.png,1024\n'
   ].join('\n')
   exec('./bin/ios-icons.js', function (error, stdout, stderr) {
     var err = error || stderr
