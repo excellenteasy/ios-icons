@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/randytarampi/ios-icons/compare/v4.0.0...v4.1.0) (2019-03-23)
+
+
+### Features
+
+* Also generate `icon-40@3x`. ([1c09dc2](https://github.com/randytarampi/ios-icons/commit/1c09dc2))
+
 # [4.0.0](https://github.com/randytarampi/ios-icons/compare/v3.4.0...v4.0.0) (2019-03-10)
 
 
