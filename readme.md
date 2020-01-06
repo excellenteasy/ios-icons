@@ -1,13 +1,13 @@
 # ios-icons 
-[![Build Status](https://travis-ci.org/excellenteasy/ios-icons.svg?branch=master)](https://travis-ci.org/excellenteasy/ios-icons)
-[![Dependency Status](https://david-dm.org/excellenteasy/ios-icons.svg)](https://david-dm.org/excellenteasy/ios-icons)
-[![devDependency Status](https://david-dm.org/excellenteasy/ios-icons/dev-status.svg)](https://david-dm.org/excellenteasy/ios-icons#info=devDependencies)
+[![Build Status](https://travis-ci.com/randytarampi/ios-icons.svg?branch=master)](https://travis-ci.com/randytarampi/ios-icons)
+[![Dependency Status](https://david-dm.org/randytarampi/ios-icons.svg)](https://david-dm.org/randytarampi/ios-icons)
+[![devDependency Status](https://david-dm.org/randytarampi/ios-icons/dev-status.svg)](https://david-dm.org/randytarampi/ios-icons#info=devDependencies)
 [![Semantically Released](https://img.shields.io/badge/versioning-semantically%20released-brightgreen.svg)](https://github.com/boennemann/semantic-release) [![Greenkeeper badge](https://badges.greenkeeper.io/randytarampi/ios-icons.svg)](https://greenkeeper.io/)
 
 > Get iOS icon file names and dimensions (width)
 
 The default icon file names and required sizes for iOS are listed in a [JSON file](icons.json). This information is useful, for example, when you want to generate icons with the required sizes or to create a [`config.xml`](http://docs.phonegap.com/en/3.5.0/config_ref_images.md.html) file for a PhoneGap/Cordova project or if you just need to create the icons for your iOS project from one source icon.
-This information also exists for [android icons](https://github.com/excellenteasy/android-icons).
+This information also exists for [android icons](https://github.com/randytarampi/android-icons).
 
 ## Install
 
