@@ -1,3 +1,10 @@
+## [4.2.1](https://github.com/randytarampi/ios-icons/compare/v4.2.0...v4.2.1) (2020-04-25)
+
+
+### Bug Fixes
+
+* package.json & package-lock.json to reduce vulnerabilities ([7600cf4](https://github.com/randytarampi/ios-icons/commit/7600cf46c7ff7551df432da0cb1cb8387657cff9))
+
 # [4.2.0](https://github.com/randytarampi/ios-icons/compare/v4.1.0...v4.2.0) (2020-01-06)
 
 
