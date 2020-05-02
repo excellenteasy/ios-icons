@@ -1,43 +1,44 @@
 {
-  "name": "ios-icons",
+  "name": "@randy.tarampi/ios-icons",
   "description": "Get iOS icon file names and dimensions (width)",
+  "version": "4.2.2",
+  "author": "Randy Tarampi <randy.tarampi@gmail.com>",
+  "bin": "./bin/ios-icons.js",
   "dependencies": {
-    "abbrev": "^1.0.7",
-    "yargs": "^8.0.1"
+    "abbrev": "^1.1.1",
+    "yargs": "^15.3.1"
   },
   "devDependencies": {
-    "semantic-release": "^7.0.2",
-    "standard": "^10.0.0",
-    "tape": "^4.0.0"
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "semantic-release": "^17.0.0",
+    "standard": "^14.3.3",
+    "tape": "^5.0.0"
   },
-  "bin": "./bin/ios-icons.js",
-  "main": "index.js",
-  "author": "David Pfahler <david@excellenteasy.com>",
   "engines": {
-    "node": "^4",
-    "npm": "^2"
-  },
-  "scripts": {
-    "test": "standard && node test.js",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "node": ">=6",
+    "npm": ">=3"
   },
   "files": [
-    "index.js",
     "bin/ios-icons.js",
-    "icons.json"
+    "icons.json",
+    "index.js"
   ],
   "keywords": [
-    "cli",
     "bin",
+    "cli",
+    "cordova",
     "icon",
     "ios",
-    "cordova",
     "phonegap"
   ],
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/excellenteasy/ios-icons.git"
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
   },
-  "version": "0.0.0-development"
+  "repository": "randytarampi/ios-icons.git",
+  "scripts": {
+    "test": "standard && node test.js"
+  }
 }

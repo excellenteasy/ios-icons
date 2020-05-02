@@ -1,25 +1,25 @@
 # ios-icons 
-[![Build Status](https://travis-ci.org/excellenteasy/ios-icons.svg?branch=master)](https://travis-ci.org/excellenteasy/ios-icons)
-[![Dependency Status](https://david-dm.org/excellenteasy/ios-icons.svg)](https://david-dm.org/excellenteasy/ios-icons)
-[![devDependency Status](https://david-dm.org/excellenteasy/ios-icons/dev-status.svg)](https://david-dm.org/excellenteasy/ios-icons#info=devDependencies)
-[![Semantically Released](https://img.shields.io/badge/versioning-semantically%20released-brightgreen.svg)](https://github.com/boennemann/semantic-release)
+[![Build Status](https://travis-ci.com/randytarampi/ios-icons.svg?branch=master)](https://travis-ci.com/randytarampi/ios-icons)
+[![Dependency Status](https://david-dm.org/randytarampi/ios-icons.svg)](https://david-dm.org/randytarampi/ios-icons)
+[![devDependency Status](https://david-dm.org/randytarampi/ios-icons/dev-status.svg)](https://david-dm.org/randytarampi/ios-icons#info=devDependencies)
+[![Semantically Released](https://img.shields.io/badge/versioning-semantically%20released-brightgreen.svg)](https://github.com/boennemann/semantic-release) 
 
 > Get iOS icon file names and dimensions (width)
 
 The default icon file names and required sizes for iOS are listed in a [JSON file](icons.json). This information is useful, for example, when you want to generate icons with the required sizes or to create a [`config.xml`](http://docs.phonegap.com/en/3.5.0/config_ref_images.md.html) file for a PhoneGap/Cordova project or if you just need to create the icons for your iOS project from one source icon.
-This information also exists for [android icons](https://github.com/excellenteasy/android-icons).
+This information also exists for [android icons](https://github.com/randytarampi/android-icons).
 
 ## Install
 
 ```sh
-$ npm install --save ios-icons
+$ npm install --save @randy.tarampi/ios-icons
 ```
 
 
 ## Usage
 
 ```js
-var icons = require('ios-icons');
+var icons = require('@randy.tarampi/ios-icons');
 
 icons();
 //=> [{name: 'icon-60@3x.png', width: 180}, {name: 'icon-60.png', width: 60, ...}]
@@ -59,7 +59,7 @@ icons({size: "60@3x"});
 > ios-icons logs to stdout in comma-separated values format (csv) by default so you can easy pipe to other commands in UNIX systems.
 
 ```sh
-$ npm install --global ios-icons
+$ npm install --global @randy.tarampi/ios-icons
 ```
 
 ```sh
